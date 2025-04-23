@@ -46,33 +46,19 @@
       <div class="right-image">
         <img src="./images/dice.gif" alt="dice" />
         </div>
-      <div class="page-content">Please enter a number between 1 and 6:</div>
-      <br />
-      <!-- Simple Textfield for integers-->
-      <form action="answer.php" method="GET">
-        <div class="mdl-textfield mdl-js-textfield">
-          <!-- input pattern attribute -->
-          <input
-            class="mdl-textfield__input"
-            type="text"
-            pattern="-?[0-9]*(\.[0-9]+)?"
-            name="user-number"
-            step="0.01" />
-          <!-- mdl-textfield__label -->
-          <label class="mdl-textfield__label" for="demo-input"></label>
-          <!-- class "mdl-textfield__error" -->
-          <span class="mdl-textfield__error">Input is not a number</span>
-        </div>
-        <br />
-        <!-- Accent-colored raised button with ripple -->
-        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="checkNumber()" type="button">
-          Check
-        </button>
-      </form>
+        <?php
+      $userNumber = $_GET["user-number"];
+      $randomNumber = random_int(int $1, int $6): int;
+      
+      if ($userNumber === $randomNumber) {
+          echo "<p>Correct! The number was: $randomNumber.</p>";
+      } else {
+          echo "<p>Wrong! The number was: $randomNumber.</p>";
+      }
+      ?>
       <br />
       <div class="page-content">
-        <div id="result"></div>
+        <a href="./index.php">Return ...</a>
       </div>
     </main>
   </div>
