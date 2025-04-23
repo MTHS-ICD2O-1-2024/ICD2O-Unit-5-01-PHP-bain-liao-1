@@ -47,12 +47,13 @@
         <img src="./images/dice.gif" alt="dice" />
         </div>
         <?php
+      $randomNumber = rand(1, 6);
       $userNumber = $_GET["user-number"];
-      $randomNumber = random_int(int $1, int $6): int;
       
-      if ($userNumber === $randomNumber) {
+      if ($userNumber == $randomNumber) {
           echo "<p>Correct! The number was: $randomNumber.</p>";
-      } else {
+      }
+        if ($userNumber != $randomNumber) {
           echo "<p>Wrong! The number was: $randomNumber.</p>";
       }
       ?>

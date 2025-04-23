@@ -66,7 +66,7 @@
         <br />
         <!-- Accent-colored raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="checkNumber()" type="button">
+          type="submit">
           Check
         </button>
       </form>
