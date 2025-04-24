@@ -59,7 +59,7 @@
             name="user-number"
             step="0.01" />
           <!-- mdl-textfield__label -->
-          <label class="mdl-textfield__label" for="demo-input"></label>
+          <label class="mdl-textfield__label" for="demo-input">Number...</label>
           <!-- class "mdl-textfield__error" -->
           <span class="mdl-textfield__error">Input is not a number</span>
         </div>
